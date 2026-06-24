@@ -1,0 +1,118 @@
+@charset "UTF-8"
+
+@font-face {
+    font-family: Padrão;
+    src: url(Fontes/tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ ExtraLight.ttf) format('truetype');
+}
+@font-face {
+    font-family: Destaque;
+    src: url(Fontes/khaviax/Khaviax.ttf) format('truetype');
+}
+@font-face {
+    font-family: subtítulos;
+    src: url(Fontes/arial_narrow_7/arial_narrow_7.ttf) format('truetype');
+}
+
+:root{
+    --cor-fundo: #A9E3B3;
+    --cor-cabeçalho: #76B596;
+    --cor-nav: #04AD94;
+    --cor-subt: #026B82;
+    --cor-titulo: #023362;
+
+
+    --font-texto: var(--Padrão);
+    --font-titulo:var(--Destaque);
+    --font-subt:var(--subtítulos)
+}
+
+.destaque{
+    border-radius: 8px 0px 0px 0px;
+}
+body{
+    font-family: 'Padrão', monospace, sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor-nav), var(--cor-cabeçalho));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    box-shadow: inset 2px -3px 20px 0px rgba(0, 0, 0, 0.288);
+    
+}
+
+header h1{
+    font-family: 'Destaque', serif;
+    text-align: center;
+    font-size: 40px;
+    color: var(--cor-titulo);
+}
+header p{
+    font-family: 'Padrão', monospace, sans-serif;
+    text-align: center;
+    color: white;
+    
+}
+
+nav{
+    background-color: var(--cor-nav);
+    font-weight: bolder;
+    padding: 0px;
+    margin-top: -16px;
+    
+
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+
+}
+nav a:hover{
+    color: var(--cor-subt);
+    background-color: var(--cor-fundo);
+    border-radius: 3px;
+    transition-duration: 0.5s;
+    padding: 5px;
+    
+}
+main{
+    background-color: white;
+    margin: 30px 20px;
+    padding: 0px 20px;
+    border-radius: 8px;
+}
+
+main h2{
+    font-family: 'subtítulos';
+    font-weight: bold;
+    background-image:linear-gradient(to right, var(--cor-cabeçalho), transparent); 
+    color: var(--cor-subt);
+    margin: -20px;
+    padding: 5px 20px;
+}
+
+main p{
+    text-indent: 20px;
+    padding: 3px;
+    text-align: justify;
+}
+main img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    background-color: var(--cor-subt);
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+
